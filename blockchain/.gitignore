@@ -1,0 +1,6 @@
+env/
+blockchain/blockchain/__pycache__
+blockchain/blockchain/__pycache__/
+blockchain/blockchainApp/management/
+blockchain/blockchainApp/migrations/__pycache__/
+staticfiles
