@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls import include, url
-from django.contrib import admin
+#from django.contrib import admin
 
 from blockchainApp import views
 
 urlpatterns = [
     url(r'^$', views.index, name='accueil'),
+    url(r'^admin_dash$', views.dashboard, name='admin'),
     url(r'^blockchain/', include(('blockchainApp.urls', 'blockchainApp'),namespace='blockchainApp')),
-    url(r'^admin_bc_cadastre/', admin.site.urls)
+    #url(r'^admin/', admin.site.urls)
 ]
 
