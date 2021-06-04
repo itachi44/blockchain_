@@ -21,7 +21,9 @@ from blockchainApp import views
 
 urlpatterns = [
     url(r'^$', views.index, name='accueil'),
-    url(r'^admin_dash$', views.dashboard, name='admin'),
+    url(r'^admin_$', views.dashboard_login, name='admin'),
+    url(r'^admin_dashboard$', views.dashboard_admin, name='admin_page'),
+    url(r'^property_owner$', views.property_owner, name='property_owner'),
     url(r'^blockchain/', include(('blockchainApp.urls', 'blockchainApp'),namespace='blockchainApp')),
     #url(r'^admin/', admin.site.urls)
 ]

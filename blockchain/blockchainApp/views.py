@@ -13,8 +13,23 @@ def index(request):
     return render(request, 'blockchainApp/index.html', context)
 
 
-def dashboard(request):
+#page connexion admin
+def dashboard_login(request):
+    context={
+
+        }
+    return render(request, 'blockchainApp/dashConnexion.html', context)
+
+#page admin
+def dashboard_admin(request):
     context={
 
         }
     return render(request, 'blockchainApp/dashboard.html', context)
+
+#page proprietaire
+def property_owner(request):
+    context={
+
+        }
+    return render(request, 'blockchainApp/proprietaire.html', context)
