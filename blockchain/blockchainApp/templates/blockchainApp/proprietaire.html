@@ -2,55 +2,38 @@
 
 
 {% block header %}
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-
-<body>
-<div class="container-fluid" style="border: 2px solid red;">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-
-            {% load static %}
-          <a class="navbar-brand" href="#"> LOGO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">A propos</a>
-              </li>
-              <li class="nav-item">
-                <li class="nav-item mx-0 mx-lg-1">
-                    <form action="{% url 'accueil'%}" method="POST">
-                        {% csrf_token %}
-                    <button type="submit" class="btn btn-info btn-lg" >Se deconnecter</button>
-                </form>
-                </li>
-              </li>
-
-              <li>
-                <a class="nav-link active" aria-current="page" href="#"> ** Bamba diop</a>
-              </li>
-              
-
-             
-        </div>
-               
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        {% load static %}
+      <a class="navbar-brand" href="#"> LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse w-100 " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100" >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">nom_page</a>
+          </li>
+          <div class="col-5" style=" display:flex; align-items:center; margin-left:65%;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">A propos</a>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item mx-0 mx-lg-1"><button type="button" class="btn btn-info btn-lg" >Deconnexion</button></li>
+  
+          </li>
+          <li class="nav-item">
+            <span class="nav-link active"  >** Bamba_Diop</span>
+          </li>
+  
           </div>
-        </div>
-      </nav>
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-                    </div>             
-</body>
-</html>
-
+        </ul>
+          
+    </div>
+           
+      </div>
+  </nav>
+        
 
 {% endblock %}
 
@@ -111,177 +94,186 @@ body{
 <body >
 	<div id ="portfolio" class="text-center paddsection">
 		<div class="section-title text-center">
-			<h2>Gallery Search Filter</h2><br>
+			<h2>Vérifier les informations de vos propriétés</h2><br>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<input id="myinput" type="text"  placeholder="Search..." class="form-control"><br><br>
+					<input id="myinput" type="text"  placeholder="Rechercher..." class="form-control"><br><br>
 
 					<div class="portfolio-container" id="card">
 
-						<div class="col-md-4 portfolio-thumbnail  " >
+						<div class="col-md-6 portfolio-thumbnail  " >
 							<div class="card" id="card">
-								<img src="" style="width: 100%">
-								<h4><b>Harley Davidson</b></h4>
-								<p>Bikes</p>
+								<img src="" alt="Avatar" style="width: 100%">
+								<h4><b>elt1</b></h4>
+								<p>N° 000000001</p>
 							</div>
-						</div>
+                        </div>
+                    </div>
 
-	  <div class="col-md-4 portfolio-thumbnail all ">
+	  <div class="col-md-6 portfolio-thumbnail all ">
                 <div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>BMW</b></h4> 
-				    <p>M5 CS cars</p> 
+				    <h4><b>elt2</b></h4> 
+				    <p>N° 000000002</p> 
 				</div>
             </div>
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar"style="width: 100%">
-				    <h4><b>Bell & Ross</b></h4> 
-				    <p>Watches</p> 
+				    <h4><b>elt3</b></h4> 
+				    <p>N° 000000003</p> 
 				</div>
             </div>
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Catier</b></h4> 
-				    <p>Watches</p> 
+				    <h4><b>elt4</b></h4> 
+				    <p>N° 000000004</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-   					 <h4><b>Harley Davidson  </b></h4> 
-				    <p>Bikes</p> 
+   					 <h4><b>elt5 </b></h4> 
+				    <p>N° 000000005</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Bogati </b></h4> 
-				    <p> cars</p> 
+				    <h4><b>elt6 </b></h4> 
+				    <p> N° 000000006</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-    				<h4><b>Harley Davidson  </b></h4> 
-				    <p>Bikes</p>				
+    				<h4><b>elt7 </b></h4> 
+				    <p>N° 000000007</p>				
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Panerai</b></h4> 
-				    <p>Watches</p> 
+				    <h4><b>elt8</b></h4> 
+				    <p>N° 000000008</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Lamborghini </b></h4> 
-				    <p>Cars</p> 
+				    <h4><b>elt9 </b></h4> 
+				    <p>N° 000000009</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Porsche </b></h4> 
-				    <p>Cars</p> 
+				    <h4><b>elt10</b></h4> 
+				    <p>N° 000000010</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Rolex</b></h4> 
-				    <p>Watches</p> 
+				    <h4><b>elt11</b></h4> 
+				    <p>N° 000000011</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Harley Davidson  </b></h4> 
-				    <p>Bikes</p>  
+				    <h4><b>elt12</b></h4> 
+				    <p>N° 000000012</p>  
 				</div>
             </div>
 
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>BMW </b></h4> 
-				    <p>Cars</p> 
+				    <h4><b>elt13</b></h4> 
+				    <p>N° 000000013</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Blancpain</b></h4> 
-				    <p>Watches</p> 
+				    <h4><b>elt14</b></h4> 
+				    <p>N° 000000014</p> 
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar"style="width: 100%">
-				    <h4><b>Harley Davidson  </b></h4> 
-				    <p>Bikes</p>  
+				    <h4><b>elt15</b></h4> 
+				    <p>N° 000000015</p>  
 				</div>
             </div>
 
 
 
-            <div class="col-md-4 portfolio-thumbnail ">
+            <div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Harley Davidson  </b></h4> 
-				    <p>Bikes</p> 
+				    <h4><b>elt16</b></h4> 
+				    <p>N° 000000016</p> 
 				</div>
             </div>
 
-       		<div class="col-md-4 portfolio-thumbnail ">
+       		<div class="col-md-6 portfolio-thumbnail ">
               	<div class="card" id="card">
 				  <img src="" alt="Avatar" style="width: 100%">
-				    <h4><b>Audemars Piguet </b></h4> 
-				    <p>Watches</p> 
+				    <h4><b>elt17</b></h4> 
+				    <p>N° 000000017</p> 
 				</div>
             </div>
+
+            <div class="col-md-6 portfolio-thumbnail ">
+                <div class="card" id="card">
+                <img src="" alt="Avatar" style="width: 100%">
+                  <h4><b>elt18</b></h4> 
+                  <p>N° 000000018</p> 
+              </div>
+          </div>
 
           </div>
         </div>
